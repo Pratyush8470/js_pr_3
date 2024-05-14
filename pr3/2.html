@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="factorial"></h1>
+
+    <script>
+        let no = 5,i = 1,fact = 1;
+
+        while (i <= no) {
+            fact *= i;
+            i++;
+        }
+
+        document.getElementById("factorial").innerHTML+=(`factorial is : ${fact}`);
+
+    </script>
+</body>
+
+</html>

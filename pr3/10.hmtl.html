@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="abc"></h1>
+
+    <script>
+
+        let no = 1;
+
+        do {
+            if (no % 3 === 0 && no % 5 === 0) 
+            {
+                document.getElementById("abc").innerHTML+=(`FizzBuzz </br>`);
+            } else if (no % 3 === 0) 
+            {
+                document.getElementById("abc").innerHTML+=(`Fizz </br>`);
+            } else if (no % 5 === 0) 
+            {
+                document.getElementById("abc").innerHTML+=(`Buzz </br>`);
+            } else 
+            {
+                document.getElementById("abc").innerHTML+=(`${no} </br>`);
+            }
+            no++;
+        } while (no <= 100);
+
+
+
+    </script>
+</body>
+
+</html>
